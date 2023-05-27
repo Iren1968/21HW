@@ -1,28 +1,27 @@
-import cypress from '21HW';
-import { Login } from '../fixtures/Login';
+import { Login } from "../fixtures/Login";
 var login = new Login();
 
-Cypress.Commands.add('loginSS', (email, password) => {
+Cypress.Commands.add("loginSS", (email, password) => {
   login.btnLogin().click().wait(5000);
   login.email().type(email);
   login.password().type(password);
   login.clickBtnLogin().wait(650).click();
 });
 
-Cypress.Commands.add('enterLogin', (selector, email) => {
+Cypress.Commands.add("enterLogin", (selector, email) => {
   cy.get(selector).type(email);
 });
 
-const regSelectors = require('../fixtures/pageRegistrationSelector.json');
+const regSelectors = require("../fixtures/pageRegistrationSelector.json");
 
-Cypress.Commands.add('validLogin', (email, userName) => {
+Cypress.Commands.add("validLogin", (email, userName) => {
   cy.typeUserName(regSelectors.nameField, userName),
     cy.get('[name="email"]').type(email),
     cy.get(loginButton).click(),
     cy
       .get(registrationField)
-      .contains('Письмо отправлено!')
-      .and('have.class', 'picture-notice__title txt-h3--semi txt');
+      .contains("Письмо отправлено!")
+      .and("have.class", "picture-notice__title txt-h3--semi txt");
 });
 
 // ***********************************************
