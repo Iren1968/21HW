@@ -4,7 +4,7 @@
   "passes": 5,
   "pending": 0,
   "failures": 0,
-  "start": "2023-05-28T19:49:04.952Z",
-  "duration": 121970,
+  "start": "2023-05-28T19:58:22.030Z",
+  "duration": 82994,
   "file": "21HW\\e2e\\folder1_21.1\\first_login_test.cy.js"
 }
