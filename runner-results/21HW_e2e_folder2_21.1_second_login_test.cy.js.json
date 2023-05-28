@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 5,
+  "passes": 5,
+  "pending": 0,
+  "failures": 0,
+  "start": "2023-05-28T19:49:30.677Z",
+  "duration": 110288,
+  "file": "21HW\\e2e\\folder2_21.1\\second_login_test.cy.js"
+}

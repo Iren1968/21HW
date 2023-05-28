@@ -1,12 +1,12 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
-  projectId: "ht8vzr",
+  projectId: 'ht8vzr',
 
   e2e: {
-    baseUrl: "https://staging.lpitko.ru",
+    baseUrl: 'https://staging.lpitko.ru',
     testIsolation: false,
-    specPattern: "**/*.cy.js",
+    specPattern: '**/*.cy.js',
     //pageLoadTimeout: 200000,
     watchForFileChanges: false,
     testIsolation: false,
@@ -18,9 +18,9 @@ module.exports = defineConfig({
       //return config;
     },
     env: {
-      environment: "staging",
-      mail: "kapadolgova@gmail.com",
-      password: "Gibbon45",
+      environment: 'staging',
+      mail: 'kapadolgova@gmail.com',
+      password: 'Gibbon45',
     },
   },
 });
